@@ -9,6 +9,8 @@ A real-time human fall detection system using temporal pose analysis and machine
 
 FallGuard AI detects human falls in real-time by analyzing body movement patterns over time. Instead of looking at a single frame, it analyzes a 1-second sliding window of 30 frames to capture motion dynamics like velocity, acceleration, torso angle, and body aspect ratio. When a fall is detected, the system triggers an audio alert and sends an email notification instantly.
 
+The goal is to assist in Healthcare & Hospitals, Elderly care, Industrial & Workplace Safety , Schools & Special Care Facilitiesby providing timely detection and alerts.
+
 ---
 
 ## ✨ Features
@@ -26,6 +28,31 @@ FallGuard AI detects human falls in real-time by analyzing body movement pattern
 ---
 
 ## 📂 Project Structure
+Fall_Detection/
+│
+├── app.py
+├── main_temporal.py
+├── train_temporal_model.py
+├── extract_temporal_features.py
+├── metrics_cal.py
+├── email_alert.py
+│
+├── models/
+│   ├── fall_detection_temporal_rf.pkl
+│   └── scaler_temporal.pkl
+│
+├── data/
+│   ├── temporal_features_cleaned.csv
+│   └── history.csv
+│
+├── images/
+│   ├── fig5_confusion_matrix.png
+│   ├── fig6_feature_importance.png
+│   └── temporal_feature_importance.png
+│
+├── requirements.txt
+├── .gitignore
+└── README.md
 
 ## 🗂️ Dataset
 
@@ -33,9 +60,9 @@ This project uses the **GMDCSA24 Dataset** — A Dataset for Human Fall Detectio
 
 - 4 subjects performing activities
 - 2 action categories: **ADL** (Activities of Daily Living) and **Fall**
-- Video formats: `.mp4`, `.avi`, `.mov`
 
-> Dataset link: [GMDCSA24 on Kaggle/Zenodo](https://github.com/ekramalam/GMDCSA24-A-Dataset-for-Human-Fall-Detection-in-Videos)
+
+> Dataset link: [GMDCSA24](https://github.com/ekramalam/GMDCSA24-A-Dataset-for-Human-Fall-Detection-in-Videos)
 
 ---
 
@@ -164,10 +191,10 @@ RECEIVER_EMAIL = "receiver@gmail.com"
 ## 👩‍💻 Author
 
 **Ruchita Joshi**  
-B.Tech Computer Science  
+Master of Computer Applications
 
 ---
 
 ## 📄 License
 
-This project is for academic and educational purposes.
+This project was developed as part of academic and self-learning efforts in Machine Learning and Computer Vision.
