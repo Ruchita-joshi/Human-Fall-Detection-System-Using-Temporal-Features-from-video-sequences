@@ -27,32 +27,6 @@ The goal is to assist in Healthcare & Hospitals, Elderly care, Industrial & Work
 
 ---
 
-## 📂 Project Structure
-Fall_Detection/<br>
-│
-├── app.py<br>
-├── main_temporal.py<br>
-├── train_temporal_model.py<br>
-├── extract_temporal_features.py<br>
-├── metrics_cal.py<br>
-├── email_alert.py<br>
-│
-├── models/<br>
-│   ├── fall_detection_temporal_rf.pkl<br>
-│   └── scaler_temporal.pkl<br>
-│
-├── data/<br>
-│   ├── temporal_features_cleaned.csv<br>
-│
-├── figures/<br>
-│   ├── fig5_confusion_matrix.png<br>
-│   ├── fig6_feature_importance.png<br>
-│   └── temporal_feature_importance.png<br>
-│
-├── requirements.txt<br>
-├── .gitignore<br>
-└── README.md<br>
-
 ## 🗂️ Dataset
 
 This project uses the **GMDCSA24 Dataset** — A Dataset for Human Fall Detection in Videos.
@@ -168,11 +142,8 @@ RECEIVER_EMAIL = "receiver@gmail.com"
 ---
 
 ## 📸 Screenshots
-
-> _Add screenshots of your app here after uploading images to your repo_
-
 | Upload & Detect | 
-|---|---|
+
 | ![Upload](outputs/fall.png) | ![Upload](outputs/normal.png)  |
 
 ---
