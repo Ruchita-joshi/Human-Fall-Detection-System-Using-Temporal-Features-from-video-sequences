@@ -1,4 +1,31 @@
 ---
+# 🛡️ FallGuard AI — Human Fall Detection System
+
+A real-time human fall detection system using temporal pose analysis and machine learning. Built with MediaPipe, OpenCV, and Random Forest — deployed as an interactive Streamlit web app.
+
+---
+
+## 📌 Project Description
+
+FallGuard AI detects human falls in real-time by analyzing body movement patterns over time. Instead of looking at a single frame, it analyzes a 1-second sliding window of 30 frames to capture motion dynamics like velocity, acceleration, torso angle, and body aspect ratio. When a fall is detected, the system triggers an audio alert and sends an email notification instantly.
+
+---
+
+## ✨ Features
+
+- 🎥 Real-time fall detection from webcam or uploaded video
+- 🦴 MediaPipe Pose for 33-landmark body tracking
+- 📊 Temporal feature extraction using sliding windows
+- 🌲 Random Forest classifier trained on movement patterns
+- 📧 Automatic email alert on fall detection
+- 🔔 Audio alarm on fall detection
+- 📈 Model performance metrics dashboard
+- 🕑 Analysis history tracking
+- 🖥️ Clean Streamlit web interface
+
+---
+
+## 📂 Project Structure
 
 ## 🗂️ Dataset
 
