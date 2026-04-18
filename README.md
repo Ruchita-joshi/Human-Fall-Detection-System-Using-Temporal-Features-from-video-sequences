@@ -174,7 +174,7 @@ RECEIVER_EMAIL = "receiver@gmail.com"
 
 | Upload & Detect | Model Metrics |
 |---|---|
-| ![Upload](screenshots/upload.png) | ![Metrics](screenshots/metrics.png) |
+| ![Upload](fall.png) | ![Metrics](screenshots/metrics.png) |
 
 ---
 
