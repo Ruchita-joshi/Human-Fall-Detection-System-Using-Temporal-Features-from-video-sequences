@@ -1,5 +1,5 @@
 ---
-# 🛡️ FallGuard AI — Human Fall Detection System
+# 🛡️ FallGuard AI — Human Fall Detection System from Video Sequences
 
 A real-time human fall detection system using temporal pose analysis and machine learning. Built with MediaPipe, OpenCV, and Random Forest — deployed as an interactive Streamlit web app.
 
@@ -9,7 +9,7 @@ A real-time human fall detection system using temporal pose analysis and machine
 
 FallGuard AI detects human falls in real-time by analyzing body movement patterns over time. Instead of looking at a single frame, it analyzes a 1-second sliding window of 30 frames to capture motion dynamics like velocity, acceleration, torso angle, and body aspect ratio. When a fall is detected, the system triggers an audio alert and sends an email notification instantly.
 
-The goal is to assist in Healthcare & Hospitals, Elderly care, Industrial & Workplace Safety , Schools & Special Care Facilitiesby providing timely detection and alerts.
+The goal is to assist in Healthcare & Hospitals, Elderly care, Industrial & Workplace Safety , Schools & Special Care Facilities by providing timely detection and alerts.
 
 ---
 
@@ -28,31 +28,30 @@ The goal is to assist in Healthcare & Hospitals, Elderly care, Industrial & Work
 ---
 
 ## 📂 Project Structure
-Fall_Detection/
+Fall_Detection/<br>
 │
-├── app.py
-├── main_temporal.py
-├── train_temporal_model.py
-├── extract_temporal_features.py
-├── metrics_cal.py
-├── email_alert.py
+├── app.py<br>
+├── main_temporal.py<br>
+├── train_temporal_model.py<br>
+├── extract_temporal_features.py<br>
+├── metrics_cal.py<br>
+├── email_alert.py<br>
 │
-├── models/
-│   ├── fall_detection_temporal_rf.pkl
-│   └── scaler_temporal.pkl
+├── models/<br>
+│   ├── fall_detection_temporal_rf.pkl<br>
+│   └── scaler_temporal.pkl<br>
 │
-├── data/
-│   ├── temporal_features_cleaned.csv
-│   └── history.csv
+├── data/<br>
+│   ├── temporal_features_cleaned.csv<br>
 │
-├── images/
-│   ├── fig5_confusion_matrix.png
-│   ├── fig6_feature_importance.png
-│   └── temporal_feature_importance.png
+├── figures/<br>
+│   ├── fig5_confusion_matrix.png<br>
+│   ├── fig6_feature_importance.png<br>
+│   └── temporal_feature_importance.png<br>
 │
-├── requirements.txt
-├── .gitignore
-└── README.md
+├── requirements.txt<br>
+├── .gitignore<br>
+└── README.md<br>
 
 ## 🗂️ Dataset
 
@@ -172,9 +171,9 @@ RECEIVER_EMAIL = "receiver@gmail.com"
 
 > _Add screenshots of your app here after uploading images to your repo_
 
-| Upload & Detect | Model Metrics |
+| Upload & Detect | 
 |---|---|
-| ![Upload](fall.png) | ![Metrics](screenshots/metrics.png) |
+| ![Upload](outputs/fall.png) | ![Upload](outputs/normal.png)  |
 
 ---
 
